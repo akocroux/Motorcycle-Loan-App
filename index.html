@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z&D Motorcycle Pawn | Fill Up, Submit, Deal!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #f8f9fa;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background-image: url('https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80&fit=crop');
+            background-size: cover;
+            background-position: center;
+            border: 5px solid white;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .logo-text {
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(46, 26, 26, 0.8);
+            font-family: 'Impact', sans-serif;
+        }
+        
+        .tagline {
+            font-size: 24px;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #FFD700;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .form-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 4px solid #2e7d32;
+        }
+        
+        h2 {
+            color: #2e7d32;
+            margin-top: 0;
+            font-size: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .tagalog {
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            border-color: #2e7d32;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(46,125,50,0.2);
+        }
+        
+        .btn-submit {
+            background: linear-gradient(to right, #2e7d32, #388e3c);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        
+        .btn-submit:hover {
+            background: linear-gradient(to right, #1b5e20, #2e7d32);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        
+        .requirements {
+            background-color: #FFF8E1;
+            border-left: 4px solid #FFC107;
+        }
+        
+        .two-columns {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .two-columns > div {
+            flex: 1;
+        }
+        
+        @media (max-width: 600px) {
+            .two-columns {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+        
+        .big-checkbox {
+            transform: scale(1.5);
+            margin: 0 10px 0 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <div class="logo-text">Z&D</div>
+        </div>
+        <div class="tagline">FILL UP, SUBMIT, DEAL!</div>
+        <p>Fast motorcycle pawn loans | Mabilis na pautang sa motorsiklo</p>
+    </div>
+    
+    <!-- Requirements Section -->
+    <div class="form-section requirements">
+        <h2>REQUIREMENTS (MGA KAILANGAN)</h2>
+        <ol>
+            <li>Japanese motorcycle brands only (Honda, Yamaha, Kawasaki, Suzuki)
+                <div class="tagalog">Tumatanggap lamang ng mga motorsiklong Hapon</div>
+            </li>
+            <li>Submit clear photos:
+                <div class="tagalog">Magsumite ng malinaw na larawan:</div>
+                <ul>
+                    <li>Front, side, back of motorcycle (harap, gilid, likod)</li>
+                    <li>Original OR/CR (original na OR/CR)</li>
+                </ul>
+            </li>
+            <li>If still paying bank loan:
+                <div class="tagalog">Kung may bayad pa sa bangko:</div>
+                <ul>
+                    <li>At least 2 years of payments completed (2 taon nang nagbabayad)</li>
+                    <li>Submit latest payment receipt (huling resibo ng bayad)</li>
+                </ul>
+            </li>
+            <li>10% interest deducted upfront (10% interes ibabawas agad)</li>
+            <li>1 month term (1 buwan ang termino)</li>
+        </ol>
+    </div>
+    
+    <!-- MAIN FORM -->
+    <form 
+      id="loanForm"
+      action="https://formsubmit.co/akocroux@gmail.com" 
+      method="POST"
+      enctype="multipart/form-data"
+    >
+        <!-- Hidden FormSubmit Fields -->
+        <input type="hidden" name="_subject" value="Z&D Pawnshop Application - New Customer!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://akocroux.github.io/thank-you.html">
+        
+        <!-- Personal Info -->
+        <div class="form-section">
+            <h2>1. YOUR INFORMATION (ANG IMPORMASYON MO)</h2>
+            
+            <label>Full Name (Buong Pangalan)</label>
+            <div class="tagalog">Pangalan mo</div>
+            <input type="text" name="full_name" required>
+            
+            <div class="two-columns">
+                <div>
+                    <label>Contact Number (# ng Cellphone)</label>
+                    <div class="tagalog">Numero ng telepono</div>
+                    <input type="tel" name="contact_number" required>
+                </div>
+                <div>
+                    <label>Address (Tirahan)</label>
+                    <div class="tagalog">Saan ka nakatira</div>
+                    <input type="text" name="address" required>
+                </div>
+            </div>
+            
+            <label>ID Type (Uri ng Valid ID)</label>
+            <div class="tagalog">Anong ID ang dala mo</div>
+            <select name="id_type" required>
+                <option value="">Select (Piliin)</option>
+                <option>Driver's License (Lisensya)</option>
+                <option>Passport</option>
+                <option>UMID</option>
+                <option>Other (Iba pa)</option>
+            </select>
+        </div>
+        
+        <!-- Motorcycle Info -->
+        <div class="form-section">
+            <h2>2. MOTORCYCLE DETAILS (DETALYE NG MOTOR)</h2>
+            
+            <label>Brand (Brand)</label>
+            <div class="tagalog">Anong brand ng motor mo</div>
+            <select name="motorcycle_brand" required>
+                <option value="">Select (Piliin)</option>
+                <option>Kawasaki</option>
+                <option>Honda</option>
+                <option>Yamaha</option>
+                <option>Suzuki</option>
+            </select>
+            
+            <div class="two-columns">
+                <div>
+                    <label>Model (Modelo)</label>
+                    <div class="tagalog">Anong model</div>
+                    <input type="text" name="motorcycle_model" required>
+                </div>
+                <div>
+                    <label>Year (Taon)</label>
+                    <div class="tagalog">Anong taon</div>
+                    <input type="number" name="year" min="1990" max="2023" required>
+                </div>
+            </div>
+            
+            <div class="two-columns">
+                <div>
+                    <label>Plate Number (# ng Plaka)</label>
+                    <div class="tagalog">Numero ng plaka</div>
+                    <input type="text" name="plate_number" required>
+                </div>
+                <div>
+                    <label>Mileage (Kilometrahe)</label>
+                    <div class="tagalog">Ilang kilometro na</div>
+                    <input type="number" name="mileage" min="0" required>
+                </div>
+            </div>
+            
+            <label>Upload OR/CR Photo (Larawan ng OR/CR)/ 
+                 <br> Latest Payment Receipt(Resibo sa Pagbayad ng Buwanang Hulog)</label>
+            <div class="tagalog">Picture ng original na OR/CR</div>
+            <input type="file" name="orcr_photo" accept="image/*" required>
+            
+            <label>Upload Motorcycle Photos (Mga larawan ng motor)</label>
+            <div class="tagalog">Harap, gilid, at likod</div>
+            <input type="file" name="motorcycle_photos" accept="image/*" multiple required>
+        </div>
+        
+        <!-- Loan Details -->
+        <div class="form-section">
+            <h2>3. LOAN AMOUNT (HALAGA NG PAUTANG)</h2>
+            
+            <label>How much do you need? (Magkano kailangan mo?)</label>
+            <div class="tagalog">Halaga ng gusto mong ipa-utang</div>
+            <input type="number" name="loan_amount" min="1000" required>
+            
+            <p><strong>Note:</strong> 10% interest will be deducted first <span class="tagalog">(10% interes ibabawas muna)</span></p>
+        </div>
+        
+        <!-- Agreement -->
+        <div class="form-section">
+            <h2>4. AGREEMENT (KASUNDUAN)</h2>
+            <p>I agree to pawn my motorcycle to Z&D Pawnshop under these terms:</p>
+            <div class="tagalog">Sumasang-ayon akong isangla ang aking motor sa Z&D sa ilalim ng mga tuntuning ito:</div>
+            
+            <ul>
+                <li>I will leave my motorcycle as collateral
+                    <div class="tagalog">Iiwan ko ang motor bilang sangla</div>
+                </li>
+                <li>10% monthly interest (10% interes kada buwan)</li>
+                <li>1 month to repay (1 buwan para makabayad)</li>
+                <li>If not paid, Z&D keeps the motorcycle
+                    <div class="tagalog">Kung hindi mabayaran, mapapasakin na ito ng Z&D</div>
+                </li>
+            </ul>
+            
+            <label>
+                <input type="checkbox" class="big-checkbox" name="agreement" required> I AGREE (SUMASANG-AYON AKO)
+            </label>
+        </div>
+        
+        <button type="submit" class="btn-submit">SUBMIT APPLICATION (IPASA ANG APLIKASYON)</button>
+    </form>
+    
+    <div style="text-align: center; margin-top: 30px; color: #666;">
+        <p><strong>Need help? (Kailangan ng tulong?)</strong></p>
+        <p>Call Roux: 0917-123-4567</p>
+        <p>FB Messenger: @akocroux</p>
+    </div>
+</body>
+</html>
